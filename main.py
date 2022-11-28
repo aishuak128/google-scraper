@@ -5,7 +5,8 @@ from db_conn import cursor, conn
 
 keywords = ('Sports', 'Lottery', 'slot', 'casino', 'sports lottery India', 'Horse Racing bet')
 
-
+# could be a lot faster if I used asynchronous calls :)
+# now it takes around 5min 
 for keyword in keywords:
     page_n = 0
     parser = ParserGoogle(keyword)
